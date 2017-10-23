@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="oc-user-identity">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `oc-user-identity`
+     * Ordercloud User Identity
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class OcUserIdentity extends Polymer.Element {
+      static get is() { return 'oc-user-identity'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'oc-user-identity'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(OcUserIdentity.is, OcUserIdentity);
+  </script>
+</dom-module>
